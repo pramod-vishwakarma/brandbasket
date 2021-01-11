@@ -163,16 +163,6 @@ var myChart = new Chart(ctx, {
         },
         responsive: true,
         
-       tooltips: {
-            callbacks: {
-                labelColor: function(tooltipItem, chart) {
-                    return {
-                        borderColor: 'rgb(255, 0, 20)',
-                        backgroundColor: 'rgb(255,20, 0)'
-                    }
-                }
-            }
-        },
         legend: {
             labels: {
                 // This more specific font property overrides the global property
@@ -258,16 +248,6 @@ var myChart = new Chart(ctx, {
         },
         responsive: true,
         
-       tooltips: {
-            callbacks: {
-                labelColor: function(tooltipItem, chart) {
-                    return {
-                        borderColor: 'rgb(255, 0, 20)',
-                        backgroundColor: 'rgb(255,20, 0)'
-                    }
-                }
-            }
-        },
         legend: {
             labels: {
                 // This more specific font property overrides the global property
@@ -278,3 +258,5 @@ var myChart = new Chart(ctx, {
     }
 });
  
+
+/*Fedback Pie chart */ 
