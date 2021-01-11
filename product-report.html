@@ -10,14 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
-    <link href="./main.css" rel="stylesheet"></head>
+    <link href="./main.css" rel="stylesheet">
+</head>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
                 <!-- <div class="logo-src"></div> -->
                 <div>
-                    <img src="assets/images/bb-logo.png" style="height: 52px;width: 100%;">
+                    <a href="index.html"><img src="assets/images/bb-logo.png" style="height: 52px;width: 100%;"></a>
                 </div>
                 <div class="header__pane ml-auto">
                     <div>
@@ -539,253 +540,128 @@
                             <div class="col-lg-12">
                            <div class="main-card mb-3 card">
                                     <div class="card-body">
-                                        <div class="table-responsive">
+                                    <div class="row">                                             
+                                        <div class="col-lg-4">
+                                            <div class="position-relative form-group">
+                                                <label for="exampleSelect" class="">Select</label>
+                                                <select name="select" id="exampleSelect" class="form-control">
+                                                    <option>iPhone 5</option>
+                                                    <option>iPhone 6</option>
+                                                    <option>iPhone 7</option>
+                                                    <option>iPhone 7 pro</option>
+                                                    <option>iPhone 8</option>
+                                                    <option>iPhone 8 pro</option>
+                                                    <option>iPhone X</option>
+                                                    <option>iPhone SE</option>
+                                                    <option>iPhone 11</option>
+                                                    <option>iPhone 11 Pro</option>
+                                                    <option>iPhone 11 Pro Max</option>
+                                                    <option>iPhone 12</option>
+                                                    <option>iPhone 12 Pro</option>
+                                                    <option>iPhone 12 Pro Max</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                           <div class="position-relative form-group">
+                                                <label for="exampleSelect" class="">Performance</label>
+                                                <select name="select" id="exampleSelect" class="form-control">
+                                                    <option>Performing</option>
+                                                    <option>Non- Performing</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                           <div class="position-relative form-group">
+                                                <label for="exampleSelect" class="">View</label>
+                                                <select class="form-control" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                                                  <option value="">Tabular</option>
+                                                  <option value="">Tabluar</option>
+                                                  <option value="view-details.html">Graph</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1" style="margin-top:2rem">
+                                           <button class="btn btn-primary">Search</button>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="table-responsive">
                                             <table class="mb-0 table table-hover table-striped">
                                                 <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Customer</th>
-                                                    <th>Mobile</th>
-                                                    <th>Model</th>
-                                                    <th>Quality</th>
-                                                    <th>Price</th>
-                                                    <th>Service</th>
-                                                    <th>Looks</th>
-                                                    <th>Date</th>
+                                                    <th>Prodcut Name</th>
+                                                    <th>Serial number</th>
+                                                    <th>Feedback</th>
+                                                    <th>Claim</th>
+                                                    <th>Executed</th>
+                                                    <th>Performance</th>
+                                                    <th>View</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>Pramod Vishwakarma</td>
                                                     <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
+                                                    <td>iPhone23949</td>
+                                                    <td>10</td>
+                                                    <td>9</td>
+                                                    <td>6</td>
+                                                    <td>Good</td>
+                                                    <td><a href="view-details.html" class="btn btn-primary">View Details</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">2</th>
-                                                    <td>Pramod Vishwakarma</td>
                                                     <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
+                                                    <td>iPhone23949</td>
+                                                    <td>10</td>
+                                                    <td>9</td>
+                                                    <td>6</td>
+                                                    <td>Good</td>
+                                                    <td><a href="view-details.html" class="btn btn-primary">View Details</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">3</th>
-                                                    <td>Pramod Vishwakarma</td>
                                                     <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
+                                                    <td>iPhone23949</td>
+                                                    <td>10</td>
+                                                    <td>9</td>
+                                                    <td>6</td>
+                                                    <td>Good</td>
+                                                    <td><a href="view-details.html" class="btn btn-primary">View Details</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">4</th>
-                                                    <td>Pramod Vishwakarma</td>
                                                     <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
+                                                    <td>iPhone23949</td>
+                                                    <td>10</td>
+                                                    <td>9</td>
+                                                    <td>6</td>
+                                                    <td>Good</td>
+                                                    <td><a href="view-details.html" class="btn btn-primary">View Details</a></td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">5</th>
-                                                    <td>Pramod Vishwakarma</td>
                                                     <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">6</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">7</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">8</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">9</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">10</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">11</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">12</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">13</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">14</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">15</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">16</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">17</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">18</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">19</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">20</th>
-                                                    <td>Pramod Vishwakarma</td>
-                                                    <td>iPhone 11</td>
-                                                    <td>iPhone Series</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>Best</td>
-                                                    <td>01/01/2021</td>
+                                                    <td>iPhone23949</td>
+                                                    <td>10</td>
+                                                    <td>9</td>
+                                                    <td>6</td>
+                                                    <td>Good</td>
+                                                    <td><a href="view-details.html" class="btn btn-primary">View Details</a></td>
                                                 </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </div>
+                                </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     </div> 
                         </div>
-                        
                    <div class="app-wrapper-footer">
                         <div class="app-footer">
                             <div class="app-footer__inner">
