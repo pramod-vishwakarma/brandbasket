@@ -10,7 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
-    <link href="./main.css" rel="stylesheet"></head>
+    <link href="./main.css" rel="stylesheet">
+    <style type="text/css">
+        .app-page-title .page-title-subheading{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: .95rem;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
@@ -529,8 +540,36 @@
                                         <i class="pe-7s-car icon-gradient bg-mean-fruit">
                                         </i>
                                     </div>
-                                    <div>View Details
-                                        <div class="page-title-subheading">View details of products</div>
+                                    <div class="row">
+                                        <div class="page-title-subheading">
+                                            <label>Product Name:</label>
+                                            <span>iPhone 11</span>
+                                        </div>
+                                        <div class="page-title-subheading">
+                                           <label>Serial Number:</label>
+                                           <span>iphone12345</span>
+                                        </div>
+                                        <div class="page-title-subheading">
+                                           <label>Total Feedback:</label>
+                                           <span>10</span>
+                                        </div>
+                                        <div class="page-title-subheading">
+                                            <label>Warranty Registered:</label>
+                                            <span>20</span>
+                                        </div>
+                                        <div class="page-title-subheading">
+                                            <label>Claim:</label>
+                                            <span>20</span>
+                                        </div>
+                                        <div class="page-title-subheading">
+                                            <label>Executed:</label>
+                                            <span>20</span>
+                                        </div>
+                                        <div class="page-title-subheading">
+                                            <label>Overall Performance:</label>
+                                            <span>Good</span>
+                                    </div>
+                                        <!-- <div class="page-title-subheading">View details of products</div> -->
                                     </div>
                                 </div>
                             </div>
@@ -539,7 +578,7 @@
                             <div class="col-lg-12">
                            <div class="main-card mb-3 card">
                                     <div class="card-body">
-                                    <div class="row">                                             
+                                    <!-- <div class="row">                                             
                                         <div class="col-lg-2">
                                             <label>Product Name:</label>
                                             <span>iPhone 11</span>
@@ -564,23 +603,23 @@
                                             <label>Executed:</label>
                                             <span>20</span>
                                         </div>
-                                </div>
+                                </div> -->
                                 <div class="row">
-                                    <div class="col-lg-2">
-                                        <label>Overall Registerd:</label>
+                                    <!-- <div class="col-lg-2">
+                                        <label>Overall Performance:</label>
                                         <span>Good</span>
+                                    </div> -->
+                                    <div class="col-lg-3 text-center">
+                                        <a href="#warranty-register">Warranty Register</a>
                                     </div>
-                                    <div class="col-lg-2">
-                                        <a href="warranty-register.html">Warranty Register</a>
+                                    <div class="col-lg-3 text-center">
+                                        <a href="#new-claim">Warranty Claim</a>
                                     </div>
-                                    <div class="col-lg-2">
-                                        <a href="new-claim.html">Warranty Claim</a>
+                                    <div class="col-lg-3 text-center">
+                                        <a href="#warranty-executed">Warranty Executed</a>
                                     </div>
-                                    <div class="col-lg-2">
-                                        <a href="warranty-executed.html">Warranty Executed</a>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <a href="new-feedback.html">Feedback</a>
+                                    <div class="col-lg-3 text-center">
+                                        <a href="#new-feedback">Feedback</a>
                                     </div>
                                  </div>
                                 
@@ -606,8 +645,895 @@
                                         </div>
                                     </div>
                                 </div>
-                    </div> 
+                            <div class="row" id="warranty-register">
+                            <div class="col-lg-12">
+                           <div class="main-card mb-3 card">
+                                    <div class="card-body"><h5>Warranty Register</h5>
+                                        <div class="table-responsive">
+                                            <table class="mb-0 table table-hover table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Customer</th>
+                                                    <th>Mobile</th>
+                                                    <th>Model</th>
+                                                    <th>Invoice Number</th>
+                                                    <th>Invoice Copy</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">7</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">9</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="row" id="new-claim">
+                            <div class="col-lg-12">
+                           <div class="main-card mb-3 card">
+                                    <div class="card-body"><h5>Warranty Claim</h5>
+                                        <div class="table-responsive">
+                                            <table class="mb-0 table table-hover table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Customer</th>
+                                                    <th>Mobile</th>
+                                                    <th>Model</th>
+                                                    <th>Invoice Number</th>
+                                                    <th>Invoice Copy</th>
+                                                    <th>Claim Date</th>
+                                                    <th>Resolve</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Resolved</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>In Progess</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">7</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">9</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                    <td>Pending</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="warranty-executed">
+                            <div class="col-lg-12">
+                           <div class="main-card mb-3 card">
+                                    <div class="card-body"><h5>Executed Warranty</h5>
+                                        <div class="table-responsive">
+                                            <table class="mb-0 table table-hover table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Customer</th>
+                                                    <th>Mobile</th>
+                                                    <th>Model</th>
+                                                    <th>Invoice Number</th>
+                                                    <th>Invoice Copy</th>
+                                                    <th>Claim Date</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">7</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">9</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>+91-9876543210</td>
+                                                    <td>11 series</td>
+                                                    <td>IPHONE1273</td>
+                                                    <td>Lorem ipsum dolor sit amet</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="new-feedback">
+                            <div class="col-lg-12">
+                           <div class="main-card mb-3 card">
+                                    <div class="card-body"><h5>Feedback</h5>
+                                        <div class="table-responsive">
+                                            <table class="mb-0 table table-hover table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Customer</th>
+                                                    <th>Mobile</th>
+                                                    <th>Model</th>
+                                                    <th>Quality</th>
+                                                    <th>Price</th>
+                                                    <th>Service</th>
+                                                    <th>Looks</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">7</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">9</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">13</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">14</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">15</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">16</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">17</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">18</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">19</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">20</th>
+                                                    <td>Pramod Vishwakarma</td>
+                                                    <td>iPhone 11</td>
+                                                    <td>iPhone Series</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>Best</td>
+                                                    <td>01/01/2021</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> 
+                    </div>
                     </div>
                         
                    <div class="app-wrapper-footer">
